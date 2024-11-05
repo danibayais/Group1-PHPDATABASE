@@ -1,0 +1,79 @@
+/* Center the body using flexbox */
+body {
+    display: flex;
+    justify-content: center;   /* Horizontally center */
+    align-items: center;       /* Vertically center */
+    min-height: 100vh;          /* Full viewport height */
+    margin: 0;                 /* Remove default margin */
+    background-color: #f4f4f4; /* Optional: background color */
+}
+
+.form-container {
+    max-width: 400px;           /* Limit maximum width */
+    width: 100%;                /* Ensure it takes full width up to 400px */
+    background-color: #fff;     /* White background for the form */
+    padding: 30px;              /* Space inside the form */
+    border-radius: 8px;         /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Shadow effect */
+}
+
+/* Optional: Styling for the form header */
+h2 {
+    text-align: center;         /* Center the heading */
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Styling input fields and buttons */
+input[type="text"], input[type="password"], input[type="email"] {
+    width: 100%;                /* Take full width */
+    padding: 12px;              /* Padding for input fields */
+    margin: 8px 0;              /* Space between fields */
+    border: 1px solid #ddd;    /* Light border */
+    border-radius: 4px;         /* Rounded corners */
+    box-sizing: border-box;     /* Ensures padding and border are inside the width */
+    font-size: 16px;            /* Text size */
+}
+
+/* Submit button and regular buttons */
+input[type="submit"], button {
+    width: 100%;                /* Button width is 100% of the container */
+    background-color: #007bff;  /* Blue background */
+    color: white;               /* White text */
+    padding: 12px;              /* Padding inside the button */
+    border: none;               /* Remove border */
+    border-radius: 4px;         /* Rounded corners */
+    cursor: pointer;           /* Pointer on hover */
+    font-size: 16px;            /* Button text size */
+    margin-top: 15px;           /* Space above the button */
+}
+
+input[type="submit"]:hover, button:hover {
+    background-color: #0056b3;  /* Darker blue on hover */
+}
+
+/* Styling for links */
+a {
+    color: #007bff;             /* Blue link color */
+    text-decoration: none;      /* No underline */
+}
+
+a:hover {
+    text-decoration: underline; /* Underline on hover */
+    color: #0056b3;             /* Darker blue on hover */
+}
+
+/* Styling for error and success messages */
+.message {
+    color: red;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.success-message {
+    color: green;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 15px;
+}
